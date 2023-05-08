@@ -34,6 +34,8 @@ jobs:
       run: chmod +x gradlew
     - name: Execute Gradle build
       run: ./gradlew jar
+    - name: Grant execute permission for gradlew
+      run: ls --recursive /home/runner/work/Copy-Link-and-Join/Copy-Link-and-Join/
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
